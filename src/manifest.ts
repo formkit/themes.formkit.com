@@ -5,5 +5,5 @@
  * @link https://github.com/formkit/theme.formkit.com
  */
 export const themeManifest = {
-  regenesis: '@formkit/theme-regenesis'
+  regenesis: () => import('@formkit/theme-regenesis'),
 }

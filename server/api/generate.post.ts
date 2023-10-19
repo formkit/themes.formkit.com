@@ -22,7 +22,7 @@ export default defineEventHandler(async (event) => {
   }
 
   const themeResolver = themeManifest[themeName]
-  const { default: theme } = await import(themeResolver) as { default: Theme<ThemeOptions> }
+  const { default: theme } = await themeResolver()
   const isTS = themeRequest.ts === 'false' ? false : true
   const isSemantic = themeRequest.semantic === 'true' ? true : false
   setHeader(event, 'Content-Type', 'application/js')
