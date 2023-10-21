@@ -1,0 +1,73 @@
+:root {
+  --bg-color: #fafafa;
+  --panel-bg-color: #fff;
+  --text-color: red; /* for debugging — red text means you're missing styles */
+  --border-color: #eaeaea;
+  --panel-border-color: rgb(226, 226, 226);
+  --headline-color: #000;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html.dark {
+  --bg-color: #171717;
+  --panel-bg-color: #1e1e1e;
+  --panel-border-color: #333;
+  --border-color: #333;
+  --headline-color: #fff;
+}
+
+body {
+  padding: 1em;
+}
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.formkit-kitchen-sink {
+  width: 100%;
+  max-width: 1300px;
+}
+.formkit-input-type {
+  display: block;
+  font-size: 2em;
+  font-family: sans-serif;
+  margin-bottom: 0.25em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--headline-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5em;
+  margin-bottom: 2em;
+}
+
+.formkit-specimen-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  margin-bottom: 4em;
+}
+.formkit-specimen-group:has([data-type="transferlist"]) {
+  grid-template-columns: repeat(auto-fit, 650px);
+}
+
+.formkit-specimen {
+  max-width: 75vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
