@@ -23,8 +23,8 @@ dependencies:
     specifier: ^0.2.4
     version: 0.2.4
   '@formkit/theme-regenesis':
-    specifier: ^0.0.2
-    version: 0.0.2
+    specifier: ^0.0.7
+    version: 0.0.7
   '@formkit/vue':
     specifier: 1.3.0-2955138
     version: 1.3.0-2955138
@@ -916,8 +916,8 @@ packages:
       - ts-node
     dev: false
 
-  /@formkit/theme-regenesis@0.0.2:
-    resolution: {integrity: sha512-R2DnWaDAFvzdV/d2WLDNQrQDtyMXK1MReP694f+3isS5pre7hOyXTRXE7/GEv+0sPfk7n71KsI++3CFKGh5CKw==}
+  /@formkit/theme-regenesis@0.0.7:
+    resolution: {integrity: sha512-/h2yMzXWTUvSnq8zTVqvH3ijArt14wFDdICpS0Xb+mafafRlGjqgM0mLLROatP6vy2rtB6jz18bc2Lo6p+h0lw==}
     dependencies:
       '@formkit/theme-creator': 0.8.0
     transitivePeerDependencies:
