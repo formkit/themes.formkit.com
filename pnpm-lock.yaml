@@ -20,8 +20,8 @@ dependencies:
     specifier: 1.3.0-2955138
     version: 1.3.0-2955138
   '@formkit/theme-editor':
-    specifier: ^0.2.3
-    version: 0.2.3
+    specifier: ^0.2.4
+    version: 0.2.4
   '@formkit/theme-regenesis':
     specifier: ^0.0.2
     version: 0.0.2
@@ -883,18 +883,6 @@ packages:
       '@formkit/validation': 1.3.0-2955138
     dev: false
 
-  /@formkit/theme-creator@0.7.3:
-    resolution: {integrity: sha512-VaZdAddeqLWojTG6cSQMyDzsxI9J+YfAAc3BZuQIlu7IXLoWKSUlY321kRpLILOXIWDlv7ube7QTHHr11GzD0A==}
-    dependencies:
-      '@formkit/core': 1.3.0-2955138
-      '@formkit/utils': 1.2.2
-      postcss: 8.4.31
-      tailwind-merge: 1.14.0
-      tailwindcss: 3.3.3
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
   /@formkit/theme-creator@0.8.0:
     resolution: {integrity: sha512-wX52TFlXbDTyjEs2ohJ71/UeK76xIwMCU/NRcIFCLHz55/oIJnnUaRqOG81nj/3pSLUv+qqH8HI6xTrxlF6d5g==}
     dependencies:
@@ -907,11 +895,23 @@ packages:
       - ts-node
     dev: false
 
-  /@formkit/theme-editor@0.2.3:
-    resolution: {integrity: sha512-ubvSvlDnP8scTR6JAxXn/BoFzq/AevCB84DwB/iXYfxu3ZYIDusm93Eho6mkGxMr3dIVWrw64ZFNMWYZntYNOw==}
+  /@formkit/theme-creator@0.9.0:
+    resolution: {integrity: sha512-RHLhy3hxe/4cwSP2ZC0j6drE2kbPy1uFapGwvPKoL8jr9bXBF5ZZeZJ7ov7q/bZBgTggI0ZPjiQESGG9OfdODg==}
+    dependencies:
+      '@formkit/core': 1.3.0-2955138
+      '@formkit/utils': 1.2.2
+      postcss: 8.4.31
+      tailwind-merge: 1.14.0
+      tailwindcss: 3.3.3
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@formkit/theme-editor@0.2.4:
+    resolution: {integrity: sha512-OeRVFUxZ1ICTswoxSGOBiKeJy7LhTgFqRMJy6De6kLYuOVe2o52+Ll2IqiFkTPXiFCA93eIn6Qc5sbzU1kpSSw==}
     dependencies:
       '@arrow-js/core': 1.0.0-alpha.9
-      '@formkit/theme-creator': 0.7.3
+      '@formkit/theme-creator': 0.9.0
     transitivePeerDependencies:
       - ts-node
     dev: false
