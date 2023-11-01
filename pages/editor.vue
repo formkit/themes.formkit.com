@@ -10,6 +10,7 @@ const config = ref()
 onMounted(async () => {
   const route = useRoute()
   const themeName = route.query.theme || 'regenesis'
+  const variables = parseVariables(route.query.variables as string || '')
   const t = themeName
   const pro = createProPlugin(useRuntimeConfig().public.formkitProKey, inputs);
   if (typeof t === 'string' && t in themeManifest) {
@@ -18,7 +19,7 @@ onMounted(async () => {
       plugins: [pro],
       icons: genesisIcons,
       config: {
-        rootClasses: rootClasses(theme.default().tailwind()),
+        rootClasses: rootClasses(theme.default(variables).tailwind()),
       }
     })
     const { createEditor } = await import('@formkit/theme-editor')
