@@ -30,6 +30,7 @@ onMounted(async () => {
       }
     })
   }) as EventListener)
+
   if (typeof t === 'string' && t in themeManifest) {
     const theme = await themeManifest[t as keyof typeof themeManifest]()
     config.value = defaultConfig({
@@ -44,6 +45,7 @@ onMounted(async () => {
       createEditor() // create the editor dialog
     }
   }
+
 })
 </script>
 
