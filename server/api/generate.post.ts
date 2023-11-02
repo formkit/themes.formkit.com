@@ -27,7 +27,9 @@ export default defineEventHandler(async (event) => {
   const { default: theme } = await themeResolver();
   const isTS = themeRequest.ts === "false" ? false : true;
   const isSemantic = themeRequest.semantic === "true" ? true : false;
-  await themeAnalytics(themeRequest, theme);
+  try {
+    // await themeAnalytics(themeRequest, theme);
+  } catch (error) {}
   setHeader(event, "Content-Type", "application/js");
   return generate(theme, themeRequest.variables, isTS, isSemantic);
 });
@@ -36,6 +38,9 @@ async function themeAnalytics(
   themeRequest: Output<typeof ThemeRequest>,
   theme: Theme<ThemeOptions>
 ) {
+  const deadManSwitch = setTimeout(() => {
+    throw new Error("Analytics timeout, moving on");
+  }, 2000);
   const analytics =
     ((await useStorage("kv").getItem(themeRequest.theme)) as
       | Record<string, number>
@@ -54,4 +59,5 @@ async function themeAnalytics(
 
   analytics.total = (analytics.total ?? 0) + 1;
   await useStorage("kv").setItem(themeRequest.theme, JSON.stringify(analytics));
+  clearTimeout(deadManSwitch);
 }
