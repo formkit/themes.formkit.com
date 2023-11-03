@@ -11,8 +11,8 @@
             Your forms, your look.
           </h1>
           <p class="text-lg max-w-[80%] text-neutral-900 dark:text-neutral-100">
-            Versatile, configurable, MIT-licensed themes for use in your
-            projects. Spend less time styling — more time building.
+            Versatile, configurable, MIT-licensed Tailwind themes for use in
+            your projects. Spend less time styling — more time building.
           </p>
 
           <code
