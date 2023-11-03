@@ -1,64 +1,76 @@
 <script lang="ts" setup>
-import type { Theme, ThemeOptions } from "@formkit/theme-creator"
-import { rootClasses } from "@formkit/theme-creator"
-import { slugify } from "@formkit/utils"
-import { FormKitProvider, defaultConfig, FormKitKitchenSink } from '@formkit/vue';
-import { genesisIcons } from '@formkit/icons';
-import { createProPlugin, inputs } from "@formkit-enterprise/pro";
-import { themeManifest } from '~/src/manifest';
+import { slugify } from "@formkit/utils";
+import { FormKitKitchenSink, configSymbol } from "@formkit/vue";
+import { themeManifest } from "~/src/manifest";
+import { rootClasses } from "@formkit/theme-creator";
 
-const config = ref()
+const config = inject(configSymbol);
+
 onMounted(async () => {
-  const route = useRoute()
-  const router = useRouter()
-  const themeName = route.query.theme || 'regenesis'
-  const variables = parseVariables(route.query.variables as string || '')
-  const t = themeName
-  const pro = createProPlugin(useRuntimeConfig().public.formkitProKey, inputs);
-  document.addEventListener('formkit-theme-update', ((e: CustomEvent) => {
-    const { variables, theme } = e.detail
-    let vars = ''
+  const route = useRoute();
+  const router = useRouter();
+  const themeName = route.query.theme || "regenesis";
+  document.addEventListener("formkit-theme-update", ((e: CustomEvent) => {
+    const { variables, theme } = e.detail;
+    let vars = "";
     let i = 0;
     for (const variable in variables) {
-      vars += `${i++ ? ',' : ''}${variable}=${variables[variable]}`
+      vars += `${i++ ? "," : ""}${variable}=${variables[variable]}`;
     }
     router.replace({
       query: {
         ...route.query,
         theme: slugify(theme.meta.name),
-        variables: vars
-      }
-    })
-  }) as EventListener)
+        variables: vars,
+      },
+    });
+  }) as EventListener);
 
-  if (typeof t === 'string' && t in themeManifest) {
-    const theme = await themeManifest[t as keyof typeof themeManifest]()
-    config.value = defaultConfig({
-      plugins: [pro],
-      icons: genesisIcons,
-      config: {
-        rootClasses: rootClasses(theme.default(variables).tailwind()),
+  if (typeof themeName === "string" && themeName in themeManifest && config) {
+    if (!customElements.get("formkit-theme-editor")) {
+      const { createEditor } = await import("@formkit/theme-editor");
+      const theme = await themeManifest[
+        themeName as keyof typeof themeManifest
+      ]();
+      const variables = (route.query.variables as string) ?? "";
+      console.log("config: ", config);
+      config.rootClasses = rootClasses(
+        theme.default(parseVariables(variables)).tailwind()
+      );
+      if (!document.getElementById("formkit-theme-editor")) {
+        createEditor();
       }
-    })
-    if (!customElements.get('formkit-theme-editor')) {
-      const { createEditor } = await import('@formkit/theme-editor')
-      createEditor() // create the editor dialog
+    }
+
+    if (document.getElementById("formkit-theme-editor")) {
+      const editor = document.getElementById("formkit-theme-editor");
+      if (editor) {
+        editor.classList.remove("hidden");
+      }
     }
   }
+});
 
-})
+onBeforeRouteLeave((to, from, next) => {
+  if (document.getElementById("formkit-theme-editor")) {
+    const editor = document.getElementById("formkit-theme-editor");
+    if (editor) {
+      editor.classList.add("hidden");
+    }
+  }
+  next();
+});
 </script>
 
 <template>
   <div>
-    <FormKitProvider v-if="config" :config="config">
-      <FormKitKitchenSink />
-    </FormKitProvider>
+    <ClientOnly>
+      <FormKitKitchenSink :schemas="['form/login']" />
+      <FormKitKitchenSink :schemas="['form/tshirt']" />
+      <FormKitKitchenSink :schemas="['form/survey']" />
+      <FormKitKitchenSink :schemas="['form/registration']" />
+      <FormKitKitchenSink :schemas="['form/application']" />
+      <FormKitKitchenSink :pro="true" />
+    </ClientOnly>
   </div>
 </template>
-
-
-<style>
-
-</style>
-

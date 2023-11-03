@@ -1,7 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      script: [
+        {
+          src: "https://cdn.tailwindcss.com",
+          id: "formkit-tailwind-script",
+        },
+        {
+          innerHTML: `
+          tailwind.config = {
+            darkMode: 'class',
+          }
+          `,
+        },
+      ],
+    },
+  },
   devtools: { enabled: false },
-  css: ["~/assets/main.css"],
+  modules: ["@formkit/nuxt", "@nuxtjs/color-mode"],
+  css: ["~/assets/css/main.css"],
   runtimeConfig: {
     public: {
       formkitProKey: process.env.FORMKIT_PRO_KEY,
@@ -16,5 +34,8 @@ export default defineNuxtConfig({
         apiToken: process.env.KV_API_TOKEN,
       },
     },
+  },
+  colorMode: {
+    classSuffix: "",
   },
 });
