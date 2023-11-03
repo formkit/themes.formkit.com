@@ -20,8 +20,8 @@ dependencies:
     specifier: 1.3.0-26ab549
     version: 1.3.0-26ab549
   '@formkit/theme-editor':
-    specifier: ^0.3.1
-    version: 0.3.1
+    specifier: ^0.3.2
+    version: 0.3.2
   '@formkit/theme-regenesis':
     specifier: ^0.0.8
     version: 0.0.8
@@ -913,8 +913,8 @@ packages:
       - ts-node
     dev: false
 
-  /@formkit/theme-editor@0.3.1:
-    resolution: {integrity: sha512-pZPWXKdDH1VeGamWZD7dnf2VnloYcPqei9VlTYb5g84qST1vJAoA5+RQ86uADNgrJuoAtpwe+YDNkdQutP0jtw==}
+  /@formkit/theme-editor@0.3.2:
+    resolution: {integrity: sha512-5UiaXHwVN1HRIZ9Gs352OFf/s9TFTM91h9w3HwYNG7t0h/a8QOHuhbA+aTmAeH9p8W5y2TTPM6CYfbjwWbFi4A==}
     dependencies:
       '@arrow-js/core': 1.0.0-alpha.9
       '@formkit/theme-creator': 0.9.0
