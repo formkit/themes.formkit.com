@@ -20,7 +20,7 @@ const navItems = [
     name: "Documentation",
     path: "https://formkit.com/essentials/styling",
     target: "_blank",
-    icon: "solid/arrow-up-right-from-square",
+    icon: "external",
   },
 ];
 </script>

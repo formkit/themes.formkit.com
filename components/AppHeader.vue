@@ -2,7 +2,7 @@
 
 <template>
   <header
-    class="fixed top-0 w-full z-50 px-6 py-4 pt-32 -mt-28 flex items-center justify-between border-b border-white/50 bg-white/70 backdrop-blur-sm"
+    class="fixed top-0 w-full z-50 px-6 py-4 pt-32 -mt-28 flex items-center justify-between border-b border-gray-100/80 bg-white/70 backdrop-blur-sm"
   >
     <NuxtLink to="/">
       <FormKitLogo />
@@ -16,7 +16,7 @@
         rel="noopener noreferrer"
         class="text-gray-500 hover:text-gray-600"
       >
-        <Icon icon="brands/github" />
+        <Icon icon="github" />
       </a>
     </div>
   </header>
