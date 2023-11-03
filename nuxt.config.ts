@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: false },
-  modules: ["@formkit/nuxt", "@nuxtjs/color-mode"],
+  modules: ["@formkit/nuxt"],
   css: ["~/assets/css/main.css"],
   runtimeConfig: {
     public: {
