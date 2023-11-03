@@ -3,7 +3,9 @@ const uuid = Math.floor(100000 + Math.random() * 900000);
 </script>
 
 <template>
-  <div class="flex items-center grayscale brightness-10">
+  <div
+    class="flex items-center grayscale brightness-10 dark:invert dark:brightness-0"
+  >
     <svg
       class="w-24"
       viewBox="0 0 127 26"
@@ -41,6 +43,8 @@ const uuid = Math.floor(100000 + Math.random() * 900000);
       </g>
     </svg>
 
-    <span class="mt-1 ml-1 font-bold text-xs opacity-40">Themes</span>
+    <span class="mt-1 ml-1 font-bold text-xs opacity-40 dark:opacity-80"
+      >Themes</span
+    >
   </div>
 </template>

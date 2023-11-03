@@ -11,7 +11,7 @@ const chartData = Array(50)
 let zIndexCount = 999;
 const exampleCardClasses = () => {
   zIndexCount--;
-  return `mb-4 bg-white border border-gray-200 p-5 rounded-xl bg-white/30 relative z-[${zIndexCount}] hover:z-[999] backdrop-blur-sm`;
+  return `mb-4 border border-neutral-200 p-5 rounded-xl bg-white/30 relative z-[${zIndexCount}] hover:z-[999] backdrop-blur-sm dark:bg-neutral-800/50 dark:border-neutral-900`;
 };
 
 // v-model values for inputs
@@ -537,14 +537,16 @@ const frameworks = [
               />
             </div>
             <div :class="exampleCardClasses()">
-              <FormKit
-                type="datepicker"
-                name="date"
-                label="Appointment date"
-                placeholder="Select a date"
-                help="Select a date to book your appointment."
-                overlay
-              />
+              <ClientOnly>
+                <FormKit
+                  type="datepicker"
+                  name="date"
+                  label="Appointment date"
+                  placeholder="Select a date"
+                  help="Select a date to book your appointment."
+                  overlay
+                />
+              </ClientOnly>
             </div>
           </div>
         </div>

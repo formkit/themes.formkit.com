@@ -22,4 +22,8 @@ const isHome = computed(
   background: url("/bg.svg") no-repeat center center fixed;
   background-size: cover;
 }
+
+.dark [data-is-home]:before {
+  filter: invert();
+}
 </style>
