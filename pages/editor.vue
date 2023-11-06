@@ -33,7 +33,6 @@ onMounted(async () => {
         themeName as keyof typeof themeManifest
       ]();
       const variables = (route.query.variables as string) ?? "";
-      console.log("config: ", config);
       config.rootClasses = rootClasses(
         theme.default(parseVariables(variables)).tailwind()
       );

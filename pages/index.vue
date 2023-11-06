@@ -1,4 +1,51 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { themeManifest } from "~/src/manifest";
+import { configSymbol } from "@formkit/vue";
+import { rootClasses } from "@formkit/theme-creator";
+
+const config = inject(configSymbol);
+const activeTheme = ref("regenesis");
+
+const themes = [
+  {
+    name: "regenesis",
+    title: "Regenesis",
+    description:
+      "A highly customizable take on the classic FormKit Genesis theme.",
+  },
+  {
+    name: "starter",
+    title: "Starter",
+    description:
+      "A bare-bones theme for authors looking to create their own look.",
+  },
+  // {
+  //   name: 'casper',
+  //   title: 'Casper',
+  //   description: 'A friendly, clean, low-contrast theme with transparency effects.',
+  // },
+  // {
+  //   name: 'materially',
+  //   title: 'Materially',
+  //   description: 'A theme that feels at home inside of a Material Design application.',
+  // },
+  // {
+  //   name: 'bitwise',
+  //   title: 'Bitwise',
+  //   description: 'A low-res pixel theme for the smallest of interfaces.',
+  // },
+];
+
+const changeTheme = async () => {
+  const theme = await themeManifest[
+    activeTheme.value as keyof typeof themeManifest
+  ]();
+  if (!theme || !config) return;
+  config.rootClasses = rootClasses(theme.default(parseVariables()).tailwind());
+};
+
+watch(activeTheme, changeTheme);
+</script>
 
 <template>
   <div class="pl-20 flex">
@@ -18,12 +65,12 @@
           <code
             class="inline-block bg-neutral-900 text-neutral-100 text-sm px-4 py-2 rounded mt-6 whitespace-nowrap dark:bg-neutral-800"
           >
-            npx formkit theme --theme=regenesis
+            npx formkit theme --theme={{ activeTheme }}
           </code>
 
           <div class="mt-8">
             <NuxtLink
-              to="/editor"
+              :to="`/editor?theme=${activeTheme}`"
               class="inline-flex items-center px-4 py-3 bg-transparent text-neutral-900 border border-neutral-900 rounded hover:bg-neutral-100 transition-colors duration-150 dark:text-neutral-100 dark:border-neutral-100 dark:hover:bg-neutral-800"
               >Customize <Icon class="ml-2" icon="submit"
             /></NuxtLink>
@@ -31,69 +78,21 @@
         </div>
 
         <div
-          class="theme-selector max-w-[620px] flex flex-wrap -mb-8 text-neutral-900 dark:text-neutral-100"
+          class="theme-selector cursor-pointer max-w-[620px] flex flex-wrap -mb-8 text-neutral-900 dark:text-neutral-100"
         >
-          <div class="w-40 mr-3 mb-8">
+          <div
+            v-for="theme in themes"
+            @click="activeTheme = theme.name"
+            class="w-40 mr-3 mb-8"
+          >
             <div
-              class="w-full mb-3 h-1 bg-neutral-600 rounded-full dark:bg-neutral-300"
+              :data-active="activeTheme === theme.name || undefined"
+              class="w-full mb-3 h-1 bg-neutral-200 data-[active]:bg-neutral-600 rounded-full dark:bg-neutral-600 data-[active]:dark:bg-neutral-200"
             ></div>
-            <h2 class="text-sm font-bold">Regenesis</h2>
-            <p class="text-xs">
-              A highly customizable take on the classic FormKit Genesis theme.
-            </p>
+            <h2 class="text-sm font-bold">{{ theme.title }}</h2>
+            <p class="text-xs">{{ theme.description }}</p>
           </div>
-          <div class="w-40 mr-3 mb-8">
-            <div
-              class="w-full mb-3 h-1 bg-neutral-200 rounded-full dark:bg-neutral-600"
-            ></div>
-            <h2 class="text-sm font-bold">Starter</h2>
-            <p class="text-xs">
-              A bare-bones theme for authors looking to create their own look.
-            </p>
-          </div>
-          <div class="w-40 mr-3 mb-8">
-            <div
-              class="w-full mb-3 h-1 bg-neutral-200 rounded-full dark:bg-neutral-600"
-            ></div>
-            <h2 class="text-sm font-bold">
-              Casper
-              <span class="text-xs font-normal text-neutral-400"
-                >(coming soon)</span
-              >
-            </h2>
-            <p class="text-xs">
-              A friendly, clean, low-contrast theme with transparency effects.
-            </p>
-          </div>
-          <div class="w-40 mr-3 mb-8">
-            <div
-              class="w-full mb-3 h-1 bg-neutral-200 rounded-full dark:bg-neutral-600"
-            ></div>
-            <h2 class="text-sm font-bold">
-              Materially
-              <span class="text-xs font-normal text-neutral-400"
-                >(coming soon)</span
-              >
-            </h2>
-            <p class="text-xs">
-              A theme that feels at home inside of a Material Design
-              application.
-            </p>
-          </div>
-          <div class="w-40 mr-3 mb-8">
-            <div
-              class="w-full mb-3 h-1 bg-neutral-200 rounded-full dark:bg-neutral-600"
-            ></div>
-            <h2 class="text-sm font-bold">
-              Bitwise
-              <span class="text-xs font-normal text-neutral-400"
-                >(coming soon)</span
-              >
-            </h2>
-            <p class="text-xs">
-              A low-res pixel theme for the smallest of interfaces.
-            </p>
-          </div>
+
           <div class="w-40 mr-3 mb-8">
             <NuxtLink to="https://github.com/formkit/theme-starter">
               <div
