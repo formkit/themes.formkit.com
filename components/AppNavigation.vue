@@ -1,7 +1,14 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const navItems = [
+const navItems: {
+  name: string;
+  path: string;
+  subtext?: string;
+  disabled?: boolean;
+  target?: string;
+  icon?: string;
+}[] = [
   {
     name: "Themes",
     path: "/",
@@ -18,7 +25,7 @@ const navItems = [
   // },
   {
     name: "Documentation",
-    path: "https://formkit.com/essentials/styling",
+    path: "https://formkit.com/guides/create-a-tailwind-theme",
     target: "_blank",
     icon: "external",
   },

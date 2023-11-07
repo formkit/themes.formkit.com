@@ -330,12 +330,12 @@ const frameworks = [
 
 <template>
   <div
-    class="fixed top-20 right-0 flex flex-nowrap overflow-visible w-[calc(80%-420px)] h-full shrink-0 z-[2]"
+    class="md:fixed w-full px-5 md:px-0 overflow-auto top-20 right-0 flex flex-nowrap md:overflow-visible md:w-[calc(80%-430px)] h-full shrink-0 z-[2]"
   >
     <div class="demo-container flex flex-nowrap">
       <div class="scroller-column mr-5 w-[365px] shrink-0">
         <div class="scroller-column-inner">
-          <div v-for="i in 2">
+          <div>
             <div :class="exampleCardClasses()">
               <FormKit
                 v-model="nameInput"
@@ -444,7 +444,7 @@ const frameworks = [
       </div>
       <div class="scroller-column mr-5 w-[365px] shrink-0">
         <div class="scroller-column-inner">
-          <div v-for="i in 2">
+          <div>
             <div :class="exampleCardClasses()">
               <FormKit
                 type="autocomplete"
@@ -553,7 +553,7 @@ const frameworks = [
       </div>
       <div class="scroller-column w-[365px] shrink-0">
         <div class="scroller-column-inner">
-          <div v-for="i in 2">
+          <div>
             <div :class="exampleCardClasses()">
               <FormKit
                 name="movie"

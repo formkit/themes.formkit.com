@@ -48,16 +48,18 @@ watch(activeTheme, changeTheme);
 </script>
 
 <template>
-  <div class="pl-20 flex">
-    <div class="flex flex-col py-20 w-[50%] shrink-0">
+  <div class="md:pl-20 md:pr-0 flex flex-wrap">
+    <div class="flex flex-col px-5 md:px-0 py-20 w-full md:w-[50%] shrink-0">
       <div class="my-auto">
-        <div class="pr-8 mb-20 max-w-[620px]">
+        <div class="lg:pr-8 mb-20 md:max-w-[620px]">
           <h1
             class="text-6xl mb-5 font-bold text-neutral-900 dark:text-neutral-100"
           >
-            Your forms, your look.
+            Your&nbsp;forms,<br />your&nbsp;look.
           </h1>
-          <p class="text-lg max-w-[80%] text-neutral-900 dark:text-neutral-100">
+          <p
+            class="text-lg w-full max-w-[90%] lg:max-w-[80%] text-neutral-900 dark:text-neutral-100"
+          >
             Versatile, configurable, MIT-licensed Tailwind themes for use in
             your projects. Spend less time styling — more time building.
           </p>
@@ -71,7 +73,22 @@ watch(activeTheme, changeTheme);
           <div class="mt-8">
             <NuxtLink
               :to="`/editor?theme=${activeTheme}`"
-              class="inline-flex items-center px-4 py-3 bg-transparent text-neutral-900 border border-neutral-900 rounded hover:bg-neutral-100 transition-colors duration-150 dark:text-neutral-100 dark:border-neutral-100 dark:hover:bg-neutral-800"
+              :class="`
+                inline-flex
+                items-center
+                px-4
+                py-3
+                bg-transparent
+                text-neutral-900
+                border
+                border-neutral-900
+                rounded
+                hover:bg-neutral-100
+                transition-colors
+                duration-150
+                dark:text-neutral-100
+                dark:border-neutral-100
+                dark:hover:bg-neutral-800`"
               >Customize <Icon class="ml-2" icon="submit"
             /></NuxtLink>
           </div>
