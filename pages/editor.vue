@@ -41,11 +41,9 @@ onMounted(async () => {
       }
     }
 
-    if (document.getElementById("formkit-theme-editor")) {
-      const editor = document.getElementById("formkit-theme-editor");
-      if (editor) {
-        editor.classList.remove("hidden");
-      }
+    const editor = document.getElementById("formkit-theme-editor");
+    if (editor) {
+      editor.classList.remove("hidden");
     }
   }
 });

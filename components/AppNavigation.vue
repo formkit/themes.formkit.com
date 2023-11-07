@@ -33,7 +33,7 @@ const navItems: {
 </script>
 
 <template>
-  <ul class="flex">
+  <ul class="hidden sm:flex">
     <li
       v-for="item in navItems"
       :key="item.path"

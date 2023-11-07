@@ -49,7 +49,9 @@ watch(activeTheme, changeTheme);
 
 <template>
   <div class="md:pl-20 md:pr-0 flex flex-wrap">
-    <div class="flex flex-col px-5 md:px-0 py-20 w-full md:w-[50%] shrink-0">
+    <div
+      class="flex flex-col px-5 md:px-0 pt-32 pb-12 md:py-20 w-full md:w-[50%] shrink-0"
+    >
       <div class="my-auto">
         <div class="lg:pr-8 mb-20 md:max-w-[620px]">
           <h1
