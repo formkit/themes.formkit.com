@@ -33,7 +33,7 @@ watch(
 
     <div class="secondary-nav flex items-center">
       <a
-        href="https://github.com/formkit/formkit"
+        href="https://github.com/formkit/theme-starter"
         target="_blank"
         rel="noopener noreferrer"
         class="text-neutral-500 mr-2 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 transition-colors duration-150"
