@@ -27,6 +27,8 @@ onMounted(async () => {
   }) as EventListener);
 
   if (typeof themeName === "string" && themeName in themeManifest && config) {
+    window.__FORMKIT_AVAILABLE_THEMES__ = themeManifest
+
     if (!customElements.get("formkit-theme-editor")) {
       const { createEditor } = await import("@formkit/theme-editor");
       const theme = await themeManifest[
@@ -40,6 +42,10 @@ onMounted(async () => {
         createEditor();
       }
     }
+
+    document.dispatchEvent(new CustomEvent('formkit-available-themes', { detail: {
+      themes: themeManifest
+    }}))
 
     const editor = document.getElementById("formkit-theme-editor");
     if (editor) {
