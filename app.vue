@@ -6,7 +6,10 @@ const isHome = computed(
 </script>
 
 <template>
-  <div :data-is-home="isHome" class="min-h-[100dvh] flex flex-col">
+  <div
+    :data-is-home="isHome"
+    class="min-h-[100dvh] flex flex-col bg-white dark:bg-neutral-900"
+  >
     <AppHeader />
     <NuxtPage class="grow" />
   </div>
