@@ -68,12 +68,47 @@ onBeforeRouteLeave((to, from, next) => {
 <template>
   <div>
     <ClientOnly>
-      <FormKitKitchenSink :schemas="['form/login']" />
-      <FormKitKitchenSink :schemas="['form/tshirt']" />
-      <FormKitKitchenSink :schemas="['form/survey']" />
-      <FormKitKitchenSink :schemas="['form/registration']" />
-      <FormKitKitchenSink :schemas="['form/application']" />
-      <FormKitKitchenSink :pro="true" />
+      <FormKitKitchenSink
+        :schemas="[
+          'autocomplete',
+          'button',
+          'checkbox',
+          'color',
+          'colorpicker',
+          'date',
+          'datepicker',
+          'datetime-local',
+          'dropdown',
+          'email',
+          'file',
+          'mask',
+          'month',
+          'number',
+          'password',
+          'radio',
+          'range',
+          'rating',
+          'repeater',
+          'search',
+          'select',
+          'slider',
+          'submit',
+          'taglist',
+          'telephone',
+          'text',
+          'textarea',
+          'time',
+          'toggle',
+          'transferlist',
+          'url',
+          'week',
+          'form/login',
+          'form/tshirt',
+          'form/survey',
+          'form/registration',
+          'form/application',
+        ]"
+      />
     </ClientOnly>
   </div>
 </template>
