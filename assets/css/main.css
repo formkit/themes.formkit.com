@@ -5,6 +5,21 @@ body {
 .formkit-kitchen-sink {
   padding: 2em;
 }
+.formkit-kitchen-sink h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+.dark .formkit-kitchen-sink h1 {
+  color: #fff;
+}
+.formkit-kitchen-sink h1 + p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.dark .formkit-kitchen-sink h1 + p {
+  color: #fff;
+}
 .formkit-input-section[data-type="transferlist"] .formkit-specimen-group {
   grid-template-columns: repeat(auto-fit, 650px);
 }

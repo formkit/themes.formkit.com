@@ -23,12 +23,12 @@ const navItems: {
   //   path: "/gallery",
   //   disabled: true,
   // },
-  {
-    name: "Documentation",
-    path: "https://formkit.com/guides/create-a-tailwind-theme",
-    target: "_blank",
-    icon: "external",
-  },
+  // {
+  //   name: "Documentation",
+  //   path: "https://formkit.com/guides/create-a-tailwind-theme",
+  //   target: "_blank",
+  //   icon: "external",
+  // },
 ];
 </script>
 
