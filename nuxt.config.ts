@@ -1,7 +1,55 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+const meta = {
+  title: "FormKit Themes",
+  description:
+    "Versatile, configurable, MIT-licensed Tailwind themes for use in your projects. Spend less time styling — more time building.",
+};
+
 export default defineNuxtConfig({
   app: {
     head: {
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+      meta: [
+        { charset: "utf-8" },
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1",
+        },
+        {
+          name: "description",
+          content: meta.description,
+        },
+        { name: "format-detection", content: "telephone=no" },
+        {
+          name: "og:description",
+          content: meta.description,
+        },
+        {
+          name: "og:site_name",
+          content: "FormKit Themes",
+        },
+        {
+          name: "og:title",
+          content: meta.title,
+        },
+        {
+          name: "og:image",
+          content: "https://themes.formkit.com/og.png",
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          name: "twitter:image",
+          content: "https://themes.formkit.com/og.png",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "FormKit Themes",
+        },
+      ],
       script: [
         {
           src: "https://cdn.tailwindcss.com",
