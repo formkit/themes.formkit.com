@@ -40,7 +40,7 @@ watch(
       >
         <Icon icon="github" />
       </a>
-      <button
+      <!-- <button
         v-if="showToggle"
         type="button"
         class="text-neutral-500 p-1.5 rounded border border-neutral-300 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 dark:border-neutral-600 transition-colors duration-150"
@@ -48,7 +48,7 @@ watch(
         @click="darkMode = !darkMode"
       >
         <Icon :icon="darkMode ? 'moon' : 'sun'" size="sm" />
-      </button>
+      </button> -->
     </div>
   </header>
 </template>
