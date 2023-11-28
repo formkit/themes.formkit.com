@@ -20,7 +20,7 @@
     "@formkit/cli": "1.3.0",
     "@formkit/icons": "1.3.0",
     "@formkit/nuxt": "1.3.0",
-    "@formkit/theme-editor": "^0.4.4",
+    "@formkit/theme-editor": "^0.4.5",
     "@formkit/theme-regenesis": "^0.0.14",
     "@formkit/theme-starter": "^0.0.4",
     "@formkit/vue": "1.3.0",
