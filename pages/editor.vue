@@ -84,7 +84,7 @@ onMounted(async () => {
 
     const editor = document.getElementById("formkit-theme-editor");
     if (editor) {
-      // editor.classList.remove("hidden");
+      editor.classList.remove("hidden");
     }
   }
 });
@@ -93,7 +93,7 @@ onBeforeRouteLeave((to, from, next) => {
   if (document.getElementById("formkit-theme-editor")) {
     const editor = document.getElementById("formkit-theme-editor");
     if (editor) {
-      // editor.classList.add("hidden");
+      editor.classList.add("hidden");
     }
   }
   next();
