@@ -196,9 +196,12 @@ onBeforeRouteLeave((to, from, next) => {
             'textarea',
             'time',
             'toggle',
+            'togglebuttons',
             'transferlist',
             'url',
             'week',
+            'barcode',
+            'multi-step',
           ]"
         />
       </ClientOnly>
