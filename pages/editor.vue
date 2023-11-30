@@ -36,7 +36,11 @@ const config = inject(configSymbol);
 onMounted(async () => {
   const route = useRoute();
   const router = useRouter();
-  const themeName = route.query.theme || "regenesis";
+  const themeName = slugify(
+    (route.query.theme as string | undefined) ||
+      (typeof window !== "undefined" && __FORMKIT_THEME__?.meta?.name) ||
+      "regenesis"
+  );
   document.addEventListener("formkit-theme-update", ((e: CustomEvent) => {
     const { variables, theme } = e.detail;
     let vars = "";
@@ -80,7 +84,7 @@ onMounted(async () => {
 
     const editor = document.getElementById("formkit-theme-editor");
     if (editor) {
-      editor.classList.remove("hidden");
+      // editor.classList.remove("hidden");
     }
   }
 });
@@ -89,7 +93,7 @@ onBeforeRouteLeave((to, from, next) => {
   if (document.getElementById("formkit-theme-editor")) {
     const editor = document.getElementById("formkit-theme-editor");
     if (editor) {
-      editor.classList.add("hidden");
+      // editor.classList.add("hidden");
     }
   }
   next();

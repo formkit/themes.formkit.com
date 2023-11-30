@@ -43,15 +43,28 @@ const themes = [
   // },
 ];
 
-const changeTheme = async () => {
-  const theme = await themeManifest[
-    activeTheme.value as keyof typeof themeManifest
-  ]();
+const changeTheme = async (themeName: string) => {
+  const theme = await themeManifest[themeName as keyof typeof themeManifest]();
   if (!theme || !config) return;
   config.rootClasses = rootClasses(theme.default(parseVariables()).tailwind());
+  if (typeof window !== "undefined") {
+    window.__FORMKIT_THEME__ = theme.default;
+    document.dispatchEvent(new Event("FormKitTheme"));
+  }
 };
 
 watch(activeTheme, changeTheme);
+
+onMounted(() => {
+  document.addEventListener("FormKitTheme", () => {
+    if (window.__FORMKIT_THEME__?.meta?.name) {
+      const newThemeName = slugify(window.__FORMKIT_THEME__.meta.name);
+      if (newThemeName !== activeTheme.value) {
+        activeTheme.value = newThemeName;
+      }
+    }
+  });
+});
 </script>
 
 <template>
