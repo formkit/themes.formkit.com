@@ -1,10 +1,17 @@
 <script lang="ts" setup>
 import { themeManifest } from "~/src/manifest";
 import { configSymbol } from "@formkit/vue";
+import { slugify } from "@formkit/utils";
 import { rootClasses } from "@formkit/theme-creator";
 
 const config = inject(configSymbol);
-const activeTheme = ref("regenesis");
+
+const activeTheme = ref(
+  slugify(
+    (typeof window !== "undefined" && __FORMKIT_THEME__?.meta?.name) ||
+      "regenesis"
+  )
+);
 
 const themes = [
   {
