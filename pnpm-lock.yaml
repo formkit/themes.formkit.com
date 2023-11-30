@@ -23,8 +23,8 @@ dependencies:
     specifier: ^0.4.5
     version: 0.4.5
   '@formkit/theme-regenesis':
-    specifier: ^0.0.16
-    version: 0.0.16
+    specifier: ^0.0.17
+    version: 0.0.17
   '@formkit/theme-starter':
     specifier: ^0.0.7
     version: 0.0.7
@@ -1147,8 +1147,8 @@ packages:
       - ts-node
     dev: false
 
-  /@formkit/theme-regenesis@0.0.16:
-    resolution: {integrity: sha512-N4C9mHd3wDXgsoi/hIISc/tbT1QyHkentHUvyBLNKmJCHPjeEGWZGrezyJlbTII0yQeUy9OKobCCijrIXH7Hcw==}
+  /@formkit/theme-regenesis@0.0.17:
+    resolution: {integrity: sha512-XrbcXFYr7RVwLEkemSHexJlKLdPyWzer9r2fJXiIjxiM1jYmz/cjB4DMyjv2gPIj1jqjQd9MRMTEzptx4ngD1w==}
     dependencies:
       '@formkit/theme-creator': 0.9.1
     transitivePeerDependencies:
