@@ -20,7 +20,8 @@ body {
 .dark .formkit-kitchen-sink h1 + p {
   color: #fff;
 }
-.formkit-input-section[data-type="transferlist"] .formkit-specimen-group {
+.formkit-input-section[data-type="transferlist"] .formkit-specimen-group,
+.formkit-input-section[data-type="multi-step"] .formkit-specimen-group {
   grid-template-columns: repeat(auto-fit, 650px);
 }
 .double {
