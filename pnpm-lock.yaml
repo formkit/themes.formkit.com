@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@formkit-enterprise/pro':
     specifier: ^0.118.0
@@ -22,7 +18,7 @@ dependencies:
     version: 1.3.0
   '@formkit/nuxt':
     specifier: 1.3.0
-    version: 1.3.0(vite@4.5.0)
+    version: 1.3.0
   '@formkit/theme-editor':
     specifier: ^0.5.1
     version: 0.5.1
@@ -33,8 +29,11 @@ dependencies:
     specifier: ^0.0.7
     version: 0.0.7
   '@formkit/vue':
-    specifier: 1.3.0
-    version: 1.3.0
+    specifier: ^1.3.2
+    version: 1.3.2
+  '@ubclaunchpad/vue-fathom':
+    specifier: ^2.0.0
+    version: 2.0.0
   valibot:
     specifier: ^0.19.0
     version: 0.19.0
@@ -42,10 +41,10 @@ dependencies:
 devDependencies:
   '@nuxt/devtools':
     specifier: latest
-    version: 1.0.4(nuxt@3.8.1)(vite@4.5.0)
+    version: 1.0.4(nuxt@3.8.1)
   nuxt:
     specifier: ^3.8.1
-    version: 3.8.1(vite@4.5.0)
+    version: 3.8.1
   vue:
     specifier: ^3.3.8
     version: 3.3.8
@@ -401,6 +400,7 @@ packages:
     cpu: [arm64]
     os: [android]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/android-arm64@0.19.5:
@@ -427,6 +427,7 @@ packages:
     cpu: [arm]
     os: [android]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/android-arm@0.19.5:
@@ -453,6 +454,7 @@ packages:
     cpu: [x64]
     os: [android]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/android-x64@0.19.5:
@@ -479,6 +481,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/darwin-arm64@0.19.5:
@@ -505,6 +508,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/darwin-x64@0.19.5:
@@ -531,6 +535,7 @@ packages:
     cpu: [arm64]
     os: [freebsd]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/freebsd-arm64@0.19.5:
@@ -557,6 +562,7 @@ packages:
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/freebsd-x64@0.19.5:
@@ -583,6 +589,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-arm64@0.19.5:
@@ -609,6 +616,7 @@ packages:
     cpu: [arm]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-arm@0.19.5:
@@ -635,6 +643,7 @@ packages:
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-ia32@0.19.5:
@@ -661,6 +670,7 @@ packages:
     cpu: [loong64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-loong64@0.19.5:
@@ -687,6 +697,7 @@ packages:
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-mips64el@0.19.5:
@@ -713,6 +724,7 @@ packages:
     cpu: [ppc64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-ppc64@0.19.5:
@@ -739,6 +751,7 @@ packages:
     cpu: [riscv64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-riscv64@0.19.5:
@@ -765,6 +778,7 @@ packages:
     cpu: [s390x]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-s390x@0.19.5:
@@ -791,6 +805,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/linux-x64@0.19.5:
@@ -817,6 +832,7 @@ packages:
     cpu: [x64]
     os: [netbsd]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/netbsd-x64@0.19.5:
@@ -843,6 +859,7 @@ packages:
     cpu: [x64]
     os: [openbsd]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/openbsd-x64@0.19.5:
@@ -869,6 +886,7 @@ packages:
     cpu: [x64]
     os: [sunos]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/sunos-x64@0.19.5:
@@ -895,6 +913,7 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/win32-arm64@0.19.5:
@@ -921,6 +940,7 @@ packages:
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/win32-ia32@0.19.5:
@@ -947,6 +967,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
+    dev: true
     optional: true
 
   /@esbuild/win32-x64@0.19.5:
@@ -995,9 +1016,9 @@ packages:
   /@formkit/barcode@1.0.2:
     resolution: {integrity: sha512-nFCAPvujE1JWuRG7iEnTfIYUItxxSoGi/cWR2vSeVEhjPKCdMql1hJC8GIyd6YhtRs6wNFvKsvH5Jo4dPj92+A==}
     dependencies:
-      '@formkit/core': 1.3.0
-      '@formkit/inputs': 1.3.0
-      '@formkit/utils': 1.3.0
+      '@formkit/core': 1.3.2
+      '@formkit/inputs': 1.3.2
+      '@formkit/utils': 1.3.2
       '@zxing/library': 0.20.0
     dev: false
 
@@ -1030,11 +1051,24 @@ packages:
       '@formkit/utils': 1.3.0
     dev: false
 
+  /@formkit/core@1.3.2:
+    resolution: {integrity: sha512-sqspEsp4CnS9cx+HWWZhN91dYyQB2Mgrhtp5tVPHPiNDpS7Wvl1L9xI/6iUc3rXxH0YhHQ8ptyLIQKO2vNpfGg==}
+    dependencies:
+      '@formkit/utils': 1.3.2
+    dev: false
+
   /@formkit/dev@1.3.0:
     resolution: {integrity: sha512-Q/MBTGG8Jd5ZlqnQq02EdvH5UIVWPxzJTep+IzqLkPUFspZhMtCU8YV/kEm1QxXntLdFxjQtmjzYHrsuul0dPA==}
     dependencies:
       '@formkit/core': 1.3.0
       '@formkit/utils': 1.3.0
+    dev: false
+
+  /@formkit/dev@1.3.2:
+    resolution: {integrity: sha512-uv0mbRpOSEQ5cIvtLng5z6IaDcQo3jW6+H6XPzR+qi11qbGQfl3JOOeLRg1caBVxc2VlUEf1ik2pFfgALb48HQ==}
+    dependencies:
+      '@formkit/core': 1.3.2
+      '@formkit/utils': 1.3.2
     dev: false
 
   /@formkit/i18n@1.3.0:
@@ -1043,6 +1077,14 @@ packages:
       '@formkit/core': 1.3.0
       '@formkit/utils': 1.3.0
       '@formkit/validation': 1.3.0
+    dev: false
+
+  /@formkit/i18n@1.3.2:
+    resolution: {integrity: sha512-fUp8DXTMcuQh0tR09Lmg1lAgXpVaocahGfYDOGgc5luUAy2MYKi7HXsvAoz3JP7wybwLs31W1LA+bLR26HIAjw==}
+    dependencies:
+      '@formkit/core': 1.3.2
+      '@formkit/utils': 1.3.2
+      '@formkit/validation': 1.3.2
     dev: false
 
   /@formkit/icons@1.3.0:
@@ -1058,7 +1100,14 @@ packages:
       '@formkit/utils': 1.3.0
     dev: false
 
-  /@formkit/nuxt@1.3.0(vite@4.5.0):
+  /@formkit/inputs@1.3.2:
+    resolution: {integrity: sha512-Z8f3S5j/r7+RS4zexon1mMJbSmqchYtFxAJ7ROJTkA0CA9gA7hwlPAQHmA/+2Tc1PWIexGJEBCqI5IL8gCGCBA==}
+    dependencies:
+      '@formkit/core': 1.3.2
+      '@formkit/utils': 1.3.2
+    dev: false
+
+  /@formkit/nuxt@1.3.0:
     resolution: {integrity: sha512-jgX91DAikIDlCPuXaGctZQhoVEXobYsC1RtPP4DZvZpBoQMWF6aVoFJp/aHSIPcDkxhELOZ2HRcxxiOr39J/XA==}
     dependencies:
       '@formkit/core': 1.3.0
@@ -1068,7 +1117,7 @@ packages:
       chokidar: 3.5.3
       nuxi: 3.9.1
       pathe: 1.1.1
-      unplugin-formkit: 0.2.7(vite@4.5.0)
+      unplugin-formkit: 0.2.7
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -1088,12 +1137,27 @@ packages:
       '@formkit/utils': 1.3.0
     dev: false
 
+  /@formkit/observer@1.3.2:
+    resolution: {integrity: sha512-vyBVUUA5JBXfh/3WHKr04z51IYt0FU3ZucR3Us/P0Vr1eFXTnaRaiBTGiBwD39xdi5iBWvSEfpvM8lpwHjh/OA==}
+    dependencies:
+      '@formkit/core': 1.3.2
+      '@formkit/utils': 1.3.2
+    dev: false
+
   /@formkit/rules@1.3.0:
     resolution: {integrity: sha512-dWMLnSRK5+ffRkLIWGDojM7eXT6rheI41lVWukcJXhr5avG4AMih0tCLjhLJkVrLERRbnkAD403FGg8JVzPMtw==}
     dependencies:
       '@formkit/core': 1.3.0
       '@formkit/utils': 1.3.0
       '@formkit/validation': 1.3.0
+    dev: false
+
+  /@formkit/rules@1.3.2:
+    resolution: {integrity: sha512-7sD/S9Rdn6z8RRplKI/Q42duV5085HRRAc15rQwvuxzL9oBhUnu2MXHJWyp+pxBJnuoAqFO0TssSHTVMWIydWA==}
+    dependencies:
+      '@formkit/core': 1.3.2
+      '@formkit/utils': 1.3.2
+      '@formkit/validation': 1.3.2
     dev: false
 
   /@formkit/theme-creator@0.9.0:
@@ -1162,8 +1226,29 @@ packages:
       '@formkit/core': 1.3.0
     dev: false
 
+  /@formkit/themes@1.3.2:
+    resolution: {integrity: sha512-rKa/pL0x6WUyWDox7PfvWvQgJQu3AsuQ30lyd1u848Wmq3LX61IeMx/mg1kYdG2ZOu6V4K07vAVBbDRpPd/UGQ==}
+    peerDependencies:
+      tailwindcss: ^3.2.0
+      unocss: ^0.31.0
+      windicss: ^3.0.0
+    peerDependenciesMeta:
+      tailwindcss:
+        optional: true
+      unocss:
+        optional: true
+      windicss:
+        optional: true
+    dependencies:
+      '@formkit/core': 1.3.2
+    dev: false
+
   /@formkit/utils@1.3.0:
     resolution: {integrity: sha512-0r6/7q40FqHj7800xCVqLvcssGxXDPzgSXrSTRH6XV9tZcycZDvF5Wy+8sJtK6ZgjgOWB2gg86x+8WlZvYv7lg==}
+    dev: false
+
+  /@formkit/utils@1.3.2:
+    resolution: {integrity: sha512-L7ltaR5vV5NK6H4NKYx8xZ85l60TutgvQHv95B7ncj9pDNUUqKK9H56zkYFXPpCQhtKU/UbK19NNOuKI0OVfkw==}
     dev: false
 
   /@formkit/validation@1.3.0:
@@ -1172,6 +1257,14 @@ packages:
       '@formkit/core': 1.3.0
       '@formkit/observer': 1.3.0
       '@formkit/utils': 1.3.0
+    dev: false
+
+  /@formkit/validation@1.3.2:
+    resolution: {integrity: sha512-j1lcLHtxV4B2O23ot+S/y5tmL8eqjTYkRMVuTsI9qzQ8xdLcAJSu+KCdO+qL1c2czQ4W1R6e9vhhw0WKk+C3ug==}
+    dependencies:
+      '@formkit/core': 1.3.2
+      '@formkit/observer': 1.3.2
+      '@formkit/utils': 1.3.2
     dev: false
 
   /@formkit/vue@1.3.0:
@@ -1186,6 +1279,26 @@ packages:
       '@formkit/themes': 1.3.0
       '@formkit/utils': 1.3.0
       '@formkit/validation': 1.3.0
+      vue: 3.3.8
+    transitivePeerDependencies:
+      - tailwindcss
+      - typescript
+      - unocss
+      - windicss
+    dev: false
+
+  /@formkit/vue@1.3.2:
+    resolution: {integrity: sha512-6QZD90xx7u1zjrWkplsnYTA0McYlWU8VNu0A6hiPZZF6F+xDUSL/en+V14RgIz6NIrdycUI44taRwmI27/8cjQ==}
+    dependencies:
+      '@formkit/core': 1.3.2
+      '@formkit/dev': 1.3.2
+      '@formkit/i18n': 1.3.2
+      '@formkit/inputs': 1.3.2
+      '@formkit/observer': 1.3.2
+      '@formkit/rules': 1.3.2
+      '@formkit/themes': 1.3.2
+      '@formkit/utils': 1.3.2
+      '@formkit/validation': 1.3.2
       vue: 3.3.8
     transitivePeerDependencies:
       - tailwindcss
@@ -1385,7 +1498,7 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: true
 
-  /@nuxt/devtools-kit@1.0.4(nuxt@3.8.1)(vite@4.5.0):
+  /@nuxt/devtools-kit@1.0.4(nuxt@3.8.1):
     resolution: {integrity: sha512-AXNeI1dBilNryCmwuTd3lU7CrPBhzUJ5ntTFiXw9MmFwe5QT3NOxDFOv0gX7z1DFnmBEmx5mPKWysCwh7htEnQ==}
     peerDependencies:
       nuxt: ^3.8.1
@@ -1394,8 +1507,7 @@ packages:
       '@nuxt/kit': 3.8.2
       '@nuxt/schema': 3.8.2
       execa: 7.2.0
-      nuxt: 3.8.1(vite@4.5.0)
-      vite: 4.5.0
+      nuxt: 3.8.1
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -1417,7 +1529,7 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /@nuxt/devtools@1.0.4(nuxt@3.8.1)(vite@4.5.0):
+  /@nuxt/devtools@1.0.4(nuxt@3.8.1):
     resolution: {integrity: sha512-G1Oo9+TaOYzePIXpNX+Zzalw/rJyIZKZpZmXfzolPlOJSA1i0JKzZX6Z7iQHdqPwNJ8t+HnVaF4PghPIpo1kwg==}
     hasBin: true
     peerDependencies:
@@ -1425,7 +1537,7 @@ packages:
       vite: '*'
     dependencies:
       '@antfu/utils': 0.7.6
-      '@nuxt/devtools-kit': 1.0.4(nuxt@3.8.1)(vite@4.5.0)
+      '@nuxt/devtools-kit': 1.0.4(nuxt@3.8.1)
       '@nuxt/devtools-wizard': 1.0.4
       '@nuxt/kit': 3.8.2
       birpc: 0.2.14
@@ -1444,7 +1556,7 @@ packages:
       local-pkg: 0.5.0
       magicast: 0.3.2
       nitropack: 2.8.0
-      nuxt: 3.8.1(vite@4.5.0)
+      nuxt: 3.8.1
       nypm: 0.3.3
       ofetch: 1.3.3
       ohash: 1.1.3
@@ -1458,9 +1570,8 @@ packages:
       simple-git: 3.21.0
       sirv: 2.0.3
       unimport: 3.5.0
-      vite: 4.5.0
-      vite-plugin-inspect: 0.7.42(@nuxt/kit@3.8.2)(vite@4.5.0)
-      vite-plugin-vue-inspector: 4.0.0(vite@4.5.0)
+      vite-plugin-inspect: 0.7.42(@nuxt/kit@3.8.2)
+      vite-plugin-vue-inspector: 4.0.0
       which: 3.0.1
       ws: 8.14.2
     transitivePeerDependencies:
@@ -2290,6 +2401,15 @@ packages:
   /@types/resolve@1.20.2:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
     dev: true
+
+  /@ubclaunchpad/vue-fathom@2.0.0:
+    resolution: {integrity: sha512-QbO0O46a2uVpGhufDyqUArOUR5mgvbpS7p0Ug01hNtXK0Qhhy1Mh1Kn6xaVpkd0+8Vp9RsvJAMoufakpTT4iRQ==}
+    dependencies:
+      fathom-client: 3.6.0
+      vue: 3.3.8
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /@unhead/dom@1.8.3:
     resolution: {integrity: sha512-rPj9PiRTDf+Qy7tSK/UCGxwKfsOOQ+YniANxQy9v2AhWsDy2amW7kbfgR9fVaSlOFdpsyuh2wLCbMcyj9Wn0Jw==}
@@ -3472,6 +3592,7 @@ packages:
       '@esbuild/win32-arm64': 0.18.20
       '@esbuild/win32-ia32': 0.18.20
       '@esbuild/win32-x64': 0.18.20
+    dev: true
 
   /esbuild@0.19.5:
     resolution: {integrity: sha512-bUxalY7b1g8vNhQKdB24QDmHeY4V4tw/s6Ak5z+jJX9laP5MoQseTOMemAr0gxssjNcH0MCViG8ONI2kksvfFQ==}
@@ -3651,6 +3772,10 @@ packages:
     resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
     dependencies:
       reusify: 1.0.4
+
+  /fathom-client@3.6.0:
+    resolution: {integrity: sha512-/mrgmVvpw4HqDCcqUfPulERhONKgnJGL74RAxfqKDuRQ+7w9lKoTHMzqBWE7WNBvmsgZEthQWJFOWOEjv+T3gA==}
+    dev: false
 
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
@@ -5052,7 +5177,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /nuxt@3.8.1(vite@4.5.0):
+  /nuxt@3.8.1:
     resolution: {integrity: sha512-RSGO56Gv0x2f6AXWw4o4GoBaVdsD0qkPCjrX7Ud/jzH3cRJoyYMPuq/9AOLvf2o1ecZWl39j5elqJ4QHmggyOA==}
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
@@ -5066,7 +5191,7 @@ packages:
         optional: true
     dependencies:
       '@nuxt/devalue': 2.0.2
-      '@nuxt/devtools': 1.0.4(nuxt@3.8.1)(vite@4.5.0)
+      '@nuxt/devtools': 1.0.4(nuxt@3.8.1)
       '@nuxt/kit': 3.8.1
       '@nuxt/schema': 3.8.1
       '@nuxt/telemetry': 2.5.2
@@ -5965,6 +6090,7 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
+    dev: true
 
   /rollup@4.6.0:
     resolution: {integrity: sha512-R8i5Her4oO1LiMQ3jKf7MUglYV/mhQ5g5OKeld5CnkmPdIGo79FDDQYqPhq/PCVuTQVuxsWgIbDy9F+zdHn80w==}
@@ -6657,7 +6783,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-formkit@0.2.7(vite@4.5.0):
+  /unplugin-formkit@0.2.7:
     resolution: {integrity: sha512-2Ea5CyEZ2rwjSpx6maweyzFUsV1M/6CiACXHkz4Jv2G32SI4jq58stU7ADWSqrIKgjJE0bllyUx25lpj6ry9gA==}
     peerDependencies:
       esbuild: '*'
@@ -6676,7 +6802,6 @@ packages:
     dependencies:
       pathe: 1.1.1
       unplugin: 1.5.0
-      vite: 4.5.0
     dev: false
 
   /unplugin-vue-router@0.7.0(vue-router@4.2.5)(vue@3.3.8):
@@ -6962,7 +7087,7 @@ packages:
       vscode-uri: 3.0.8
     dev: true
 
-  /vite-plugin-inspect@0.7.42(@nuxt/kit@3.8.2)(vite@4.5.0):
+  /vite-plugin-inspect@0.7.42(@nuxt/kit@3.8.2):
     resolution: {integrity: sha512-JCyX86wr3siQc+p9Kd0t8VkFHAJag0RaQVIpdFGSv5FEaePEVB6+V/RGtz2dQkkGSXQzRWrPs4cU3dRKg32bXw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6981,13 +7106,12 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       sirv: 2.0.3
-      vite: 4.5.0
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /vite-plugin-vue-inspector@4.0.0(vite@4.5.0):
+  /vite-plugin-vue-inspector@4.0.0:
     resolution: {integrity: sha512-xNjMbRj3YrebuuInTvlC8ghPtzT+3LjMIQPeeR/5CaFd+WcbA9wBnECZmlcP3GITCVED0SxGmTyoJ3iVKsK4vQ==}
     peerDependencies:
       vite: ^3.0.0-0 || ^4.0.0-0
@@ -7001,7 +7125,6 @@ packages:
       '@vue/compiler-dom': 3.3.8
       kolorist: 1.8.0
       magic-string: 0.30.5
-      vite: 4.5.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7039,6 +7162,7 @@ packages:
       rollup: 3.29.4
     optionalDependencies:
       fsevents: 2.3.3
+    dev: true
 
   /vscode-jsonrpc@6.0.0:
     resolution: {integrity: sha512-wnJA4BnEjOSyFMvjZdpiOwhSq9uDoK8e/kpRJDTaMYzwlkrhG1fwDIZI94CLsLzlCK5cIbMMtFlJlfR57Lavmg==}
@@ -7239,3 +7363,7 @@ packages:
       compress-commons: 5.0.1
       readable-stream: 3.6.2
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
