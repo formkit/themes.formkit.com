@@ -27,19 +27,21 @@ const themes = [
       "A bare-bones theme for authors looking to create their own look.",
   },
   // {
-  //   name: 'casper',
-  //   title: 'Casper',
-  //   description: 'A friendly, clean, low-contrast theme with transparency effects.',
+  //   name: "casper",
+  //   title: "Casper",
+  //   description:
+  //     "A friendly, clean, low-contrast theme with transparency effects.",
   // },
   // {
-  //   name: 'materially',
-  //   title: 'Materially',
-  //   description: 'A theme that feels at home inside of a Material Design application.',
+  //   name: "materially",
+  //   title: "Materially",
+  //   description:
+  //     "A theme that feels at home inside of a Material Design application.",
   // },
   // {
-  //   name: 'bitwise',
-  //   title: 'Bitwise',
-  //   description: 'A low-res pixel theme for the smallest of interfaces.',
+  //   name: "bitwise",
+  //   title: "Bitwise",
+  //   description: "A low-res pixel theme for the smallest of interfaces.",
   // },
 ];
 

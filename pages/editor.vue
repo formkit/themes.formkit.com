@@ -1,36 +1,9 @@
 <script lang="ts" setup>
 import { slugify } from "@formkit/utils";
-import { FormKitKitchenSink, configSymbol } from "@formkit/vue";
+import { configSymbol } from "@formkit/vue";
 import { themeManifest } from "~/src/manifest";
 import { rootClasses } from "@formkit/theme-creator";
 
-const activeTab = ref("kitchenSink");
-const tabs = [
-  {
-    id: "kitchenSink",
-    label: "Kitchen Sink",
-  },
-  {
-    id: "login",
-    label: "Login Form",
-  },
-  {
-    id: "tshirt",
-    label: "Order Form",
-  },
-  {
-    id: "survey",
-    label: "Survey Form",
-  },
-  {
-    id: "registration",
-    label: "Registration Form",
-  },
-  {
-    id: "application",
-    label: "Application Form",
-  },
-];
 const config = inject(configSymbol);
 
 onMounted(async () => {
@@ -101,114 +74,7 @@ onBeforeRouteLeave((to, from, next) => {
 </script>
 
 <template>
-  <div>
-    <div class="tab-navigation mt-20 -mb-5 flex px-8">
-      <div v-for="tab in tabs">
-        <button
-          :key="tab.id"
-          :data-active="activeTab === tab.id || undefined"
-          :class="`
-            inline-flex
-            items-center
-            px-4
-            py-3
-            bg-transparent
-            text-neutral-900
-            border
-            border-neutral-900
-            data-[active]:bg-neutral-900
-            data-[active]:text-neutral-100
-            rounded
-            hover:bg-neutral-100
-            transition-colors
-            duration-150
-            mr-2
-            mb-2
-            dark:text-neutral-100
-            dark:border-neutral-800
-            dark:hover:bg-neutral-800
-            dark:data-[active]:bg-neutral-100
-            dark:data-[active]:text-neutral-900
-          `"
-          @click="activeTab = tab.id"
-        >
-          {{ tab.label }}
-        </button>
-      </div>
-    </div>
-
-    <div v-if="activeTab === 'login'">
-      <ClientOnly>
-        <FormKitKitchenSink :schemas="['form/login']" />
-      </ClientOnly>
-    </div>
-
-    <div v-if="activeTab === 'tshirt'">
-      <ClientOnly>
-        <FormKitKitchenSink :schemas="['form/tshirt']" />
-      </ClientOnly>
-    </div>
-
-    <div v-if="activeTab === 'survey'">
-      <ClientOnly>
-        <FormKitKitchenSink :schemas="['form/survey']" />
-      </ClientOnly>
-    </div>
-
-    <div v-if="activeTab === 'registration'">
-      <ClientOnly>
-        <FormKitKitchenSink :schemas="['form/registration']" />
-      </ClientOnly>
-    </div>
-
-    <div v-if="activeTab === 'application'">
-      <ClientOnly>
-        <FormKitKitchenSink :schemas="['form/application']" />
-      </ClientOnly>
-    </div>
-
-    <div v-if="activeTab === 'kitchenSink'">
-      <ClientOnly>
-        <FormKitKitchenSink
-          :schemas="[
-            'autocomplete',
-            'button',
-            'checkbox',
-            'color',
-            'colorpicker',
-            'date',
-            'datepicker',
-            'datetime-local',
-            'dropdown',
-            'email',
-            'file',
-            'mask',
-            'month',
-            'number',
-            'password',
-            'radio',
-            'range',
-            'rating',
-            'repeater',
-            'search',
-            'select',
-            'slider',
-            'submit',
-            'taglist',
-            'telephone',
-            'text',
-            'textarea',
-            'time',
-            'toggle',
-            'togglebuttons',
-            'transferlist',
-            'url',
-            'week',
-            'barcode',
-            'multi-step',
-          ]"
-        />
-      </ClientOnly>
-    </div>
-  </div>
+  <ClientOnly>
+    <FormKitKitchenSink />
+  </ClientOnly>
 </template>

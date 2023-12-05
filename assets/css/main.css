@@ -1,52 +1,6 @@
 body {
   min-height: 100dvh;
 }
-
 .formkit-kitchen-sink {
-  padding: 2em;
-}
-.formkit-kitchen-sink h1 {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 0.25em;
-}
-.dark .formkit-kitchen-sink h1 {
-  color: #fff;
-}
-.formkit-kitchen-sink h1 + p {
-  font-size: 1em;
-  margin-bottom: 1em;
-}
-.dark .formkit-kitchen-sink h1 + p {
-  color: #fff;
-}
-.formkit-input-section[data-type="transferlist"] .formkit-specimen-group,
-.formkit-input-section[data-type="multi-step"] .formkit-specimen-group {
-  grid-template-columns: repeat(auto-fit, 650px);
-}
-.double {
-  display: flex;
-}
-.double > * {
-  width: 50%;
-  flex-grow: 1;
-}
-.double > *:first-child {
-  margin-right: 0.25em;
-}
-.double > *:last-child {
-  margin-left: 0.25em;
-}
-.triple {
-  display: flex;
-}
-.triple > * {
-  flex-grow: 1;
-  width: 33.333%;
-}
-.triple > *:first-child {
-  margin-right: 0.5em;
-}
-.triple > *:last-child {
-  margin-left: 0.5em;
+  margin-top: 3em;
 }
