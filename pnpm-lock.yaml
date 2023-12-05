@@ -29,7 +29,7 @@ dependencies:
     specifier: ^0.0.7
     version: 0.0.7
   '@formkit/vue':
-    specifier: ^1.3.2
+    specifier: ^1.3.0
     version: 1.3.2
   '@ubclaunchpad/vue-fathom':
     specifier: ^2.0.0
