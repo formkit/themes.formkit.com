@@ -23,7 +23,7 @@
     "@formkit/icons": "1.4.0",
     "@formkit/nuxt": "1.4.0",
     "@formkit/theme-editor": "^0.5.1",
-    "@formkit/theme-regenesis": "^1.0.2",
+    "@formkit/theme-regenesis": "^1.0.3",
     "@formkit/theme-starter": "^1.0.2",
     "@formkit/vue": "^1.4.0",
     "@ubclaunchpad/vue-fathom": "^2.0.0",
