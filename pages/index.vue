@@ -75,6 +75,8 @@ onMounted(() => {
       class="flex flex-col px-5 md:px-0 pt-32 pb-12 md:py-20 w-full md:w-[50%] shrink-0"
     >
       <div class="my-auto">
+        <AnnouncementCallout />
+
         <div class="lg:pr-8 mb-20 md:max-w-[620px]">
           <h1
             class="text-6xl mb-5 font-bold text-neutral-900 dark:text-neutral-100"
