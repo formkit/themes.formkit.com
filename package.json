@@ -16,7 +16,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@formkit-enterprise/pro": "^0.119.0",
+    "@formkit-enterprise/pro": "^0.119.7",
     "@formkit/addons": "1.4.0",
     "@formkit/barcode": "latest",
     "@formkit/cli": "1.4.0",
