@@ -17,15 +17,15 @@
   },
   "dependencies": {
     "@formkit-enterprise/pro": "^0.119.9",
-    "@formkit/addons": "1.4.0",
+    "@formkit/addons": "latest",
     "@formkit/barcode": "latest",
-    "@formkit/cli": "1.4.0",
-    "@formkit/icons": "1.4.0",
-    "@formkit/nuxt": "1.4.0",
-    "@formkit/theme-editor": "^0.5.1",
-    "@formkit/theme-regenesis": "^1.1.0",
-    "@formkit/theme-starter": "^1.1.0",
-    "@formkit/vue": "^1.5.1",
+    "@formkit/cli": "latest",
+    "@formkit/icons": "latest",
+    "@formkit/nuxt": "latest",
+    "@formkit/theme-editor": "latest",
+    "@formkit/theme-regenesis": "latest",
+    "@formkit/theme-starter": "latest",
+    "@formkit/vue": "latest",
     "@ubclaunchpad/vue-fathom": "^2.0.0",
     "valibot": "^0.19.0"
   }
