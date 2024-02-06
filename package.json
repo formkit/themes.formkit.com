@@ -11,12 +11,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.9.3",
+    "nuxt": "^3.10.1",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@formkit-enterprise/pro": "^0.119.9",
+    "@formkit-enterprise/pro": "latest",
     "@formkit/addons": "latest",
     "@formkit/barcode": "latest",
     "@formkit/cli": "latest",
