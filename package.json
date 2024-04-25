@@ -11,9 +11,9 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.10.3",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "nuxt": "^3.11.2",
+    "vue": "^3.4.25",
+    "vue-router": "^4.3.2"
   },
   "dependencies": {
     "@formkit-enterprise/pro": "latest",
