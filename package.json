@@ -11,9 +11,9 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.11.2",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "nuxt": "^3.12.4",
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2"
   },
   "dependencies": {
     "@formkit-enterprise/pro": "latest",
@@ -23,8 +23,8 @@
     "@formkit/icons": "latest",
     "@formkit/nuxt": "latest",
     "@formkit/theme-editor": "latest",
-    "@formkit/theme-regenesis": "latest",
-    "@formkit/theme-starter": "latest",
+    "@formkit/theme-regenesis": "^1.4.2",
+    "@formkit/theme-starter": "^1.4.2",
     "@formkit/vue": "latest",
     "@ubclaunchpad/vue-fathom": "^2.0.0",
     "valibot": "^0.19.0"
