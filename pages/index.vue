@@ -13,6 +13,8 @@ const activeTheme = ref(
   )
 );
 
+const isDownloadModalOpen = ref(false);
+
 const themes = [
   {
     name: "regenesis",
@@ -88,11 +90,15 @@ onMounted(() => {
             your projects. Spend less time styling — more time building.
           </p>
 
-          <code
-            class="inline-block bg-neutral-900 text-neutral-100 text-sm px-4 py-2 rounded mt-6 whitespace-nowrap dark:bg-neutral-800"
+          <button
+            @click="isDownloadModalOpen = true"
+            class="inline-flex items-center bg-neutral-900 text-neutral-100 text-sm px-4 py-2 rounded mt-6 hover:bg-neutral-700 transition-colors dark:bg-neutral-800 dark:hover:bg-neutral-700"
           >
-            npx formkit theme --theme={{ activeTheme }}
-          </code>
+            <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download Theme
+          </button>
 
           <div class="mt-8">
             <NuxtLink
@@ -148,5 +154,11 @@ onMounted(() => {
     </div>
 
     <FormKitExampleScroller />
+
+    <DownloadModal
+      :theme-name="activeTheme"
+      :is-open="isDownloadModalOpen"
+      @close="isDownloadModalOpen = false"
+    />
   </div>
 </template>

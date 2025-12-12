@@ -23,8 +23,10 @@
     "@formkit/icons": "latest",
     "@formkit/nuxt": "latest",
     "@formkit/theme-editor": "latest",
-    "@formkit/theme-regenesis": "^1.4.2",
-    "@formkit/theme-starter": "^1.4.2",
+    "@formkit/theme-regenesis": "^2.0.0",
+    "@formkit/theme-regenesis-tw3": "npm:@formkit/theme-regenesis@^1.4.2",
+    "@formkit/theme-starter": "^2.0.0",
+    "@formkit/theme-starter-tw3": "npm:@formkit/theme-starter@^1.4.2",
     "@formkit/vue": "latest",
     "@ubclaunchpad/vue-fathom": "^2.0.0",
     "valibot": "^0.19.0"
