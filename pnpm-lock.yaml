@@ -33,14 +33,14 @@ importers:
         specifier: latest
         version: 0.5.1(yaml@2.8.2)
       '@formkit/theme-regenesis':
-        specifier: ^2.0.0
-        version: 2.0.0(yaml@2.8.2)
+        specifier: ^2.0.1
+        version: 2.0.1(yaml@2.8.2)
       '@formkit/theme-regenesis-tw3':
         specifier: npm:@formkit/theme-regenesis@^1.4.2
         version: '@formkit/theme-regenesis@1.4.2(yaml@2.8.2)'
       '@formkit/theme-starter':
-        specifier: ^2.0.0
-        version: 2.0.0(yaml@2.8.2)
+        specifier: ^2.0.1
+        version: 2.0.1(yaml@2.8.2)
       '@formkit/theme-starter-tw3':
         specifier: npm:@formkit/theme-starter@^1.4.2
         version: '@formkit/theme-starter@1.4.2(yaml@2.8.2)'
@@ -608,14 +608,14 @@ packages:
   '@formkit/theme-regenesis@1.4.2':
     resolution: {integrity: sha512-HOo1SAb4f8PBtB7sGXTfiBBnZeyO5L3+TySBxrYoBZmj8R49/XozP4CM7OguPEfTPsGc5VI6NuTWUGFDefasCw==}
 
-  '@formkit/theme-regenesis@2.0.0':
-    resolution: {integrity: sha512-QGK0GkEqRx8LltnuNAvOoGmQiNJg/k581Mmr17RG8IlFb3+ZbsvSJ/ghZe2y8TRcTmapsPUYvBrY58I2BBrM/Q==}
+  '@formkit/theme-regenesis@2.0.1':
+    resolution: {integrity: sha512-Mucd7djsGR2W+/OtyyRD+lDxGhYPT/ig1sDRHIOsXGenF/9qG9rL5n+qZ+h9RM5WnfchjgKLzlaGSeMA3D0ttg==}
 
   '@formkit/theme-starter@1.4.2':
     resolution: {integrity: sha512-CPxjUpYD6h1LzzpiFW+HrytSbJU/8tnxeC+0YHJq7zMnyxpWomcpbtNf256HghKlsCBu0a/recJnxZj8Au0agw==}
 
-  '@formkit/theme-starter@2.0.0':
-    resolution: {integrity: sha512-kFkEk2PctocQFZG0kceiuCeGUW/1jUjiXtoQktaX+y+5vJ0rAp6y2akNsUdk1Q0ZxZXTZAVZSEJg/p2gux7nNA==}
+  '@formkit/theme-starter@2.0.1':
+    resolution: {integrity: sha512-GnHu47Io1e+10U1BU0sxwRQnogoJxVIGcxiQaccXwFkV66Z4t3/9G+XfIVtq2r4YyqcqRFqICAVdJzuiMYc1Lg==}
 
   '@formkit/themes@1.6.9':
     resolution: {integrity: sha512-/UD+MehQEdcCEadt73eIBGGAMEK8ODN0yq9r9299WvQxIELCOP2MbcxuWCV/g2Vd15Xhl8YFdn4KCzQi4X7QXA==}
@@ -4561,7 +4561,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@formkit/theme-regenesis@2.0.0(yaml@2.8.2)':
+  '@formkit/theme-regenesis@2.0.1(yaml@2.8.2)':
     dependencies:
       '@formkit/theme-creator': 2.0.0(yaml@2.8.2)
     transitivePeerDependencies:
@@ -4577,7 +4577,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@formkit/theme-starter@2.0.0(yaml@2.8.2)':
+  '@formkit/theme-starter@2.0.1(yaml@2.8.2)':
     dependencies:
       '@formkit/theme-creator': 2.0.0(yaml@2.8.2)
     transitivePeerDependencies:
