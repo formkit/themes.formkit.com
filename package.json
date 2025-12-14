@@ -22,6 +22,7 @@
     "@formkit/cli": "latest",
     "@formkit/icons": "latest",
     "@formkit/nuxt": "latest",
+    "@formkit/theme-creator": "^2.0.0",
     "@formkit/theme-editor": "latest",
     "@formkit/theme-regenesis": "^2.0.0",
     "@formkit/theme-regenesis-tw3": "npm:@formkit/theme-regenesis@^1.4.2",
