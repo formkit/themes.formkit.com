@@ -30,8 +30,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(yaml@2.8.2)
       '@formkit/theme-editor':
-        specifier: latest
-        version: 0.5.1(yaml@2.8.2)
+        specifier: 0.6.1
+        version: 0.6.1(yaml@2.8.2)
       '@formkit/theme-regenesis':
         specifier: ^2.0.1
         version: 2.0.1(yaml@2.8.2)
@@ -602,8 +602,8 @@ packages:
   '@formkit/theme-creator@2.0.0':
     resolution: {integrity: sha512-I6+xfEUBROpCG6aQwNH6iBgzPeWMAh9iikCGz1yRcsI39KG6b9idIhwysyo8ax2zKMrsuQ7coeeFiK6i5Q140Q==}
 
-  '@formkit/theme-editor@0.5.1':
-    resolution: {integrity: sha512-3UNARxixLYT8zfoxTiwesXMkSPPCNuNydQGwRH58LCPykdYF/qdqDzTcVE1O+gHp6HTY6OfzvCbCXd0Cd/YOsw==}
+  '@formkit/theme-editor@0.6.1':
+    resolution: {integrity: sha512-9KsP3FgeyShbpL3Tmkj9VexJwZBUbceSlpf8n773lPPi7ttPKWUD6ltcXLZGtQUUk2jlwQ/LRBG8srCNss3fuw==}
 
   '@formkit/theme-regenesis@1.4.2':
     resolution: {integrity: sha512-HOo1SAb4f8PBtB7sGXTfiBBnZeyO5L3+TySBxrYoBZmj8R49/XozP4CM7OguPEfTPsGc5VI6NuTWUGFDefasCw==}
@@ -4545,7 +4545,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@formkit/theme-editor@0.5.1(yaml@2.8.2)':
+  '@formkit/theme-editor@0.6.1(yaml@2.8.2)':
     dependencies:
       '@arrow-js/core': 1.0.0-alpha.9
       '@formkit/theme-creator': 0.9.1(yaml@2.8.2)

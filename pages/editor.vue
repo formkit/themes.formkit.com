@@ -1,13 +1,8 @@
 <script lang="ts" setup>
 import { slugify } from "@formkit/utils";
 import { configSymbol } from "@formkit/vue";
-import { themeManifest, baseThemes } from "~/src/manifest";
+import { themeManifest } from "~/src/manifest";
 import { rootClasses } from "@formkit/theme-creator";
-
-// Create a filtered manifest with only base themes (no TW3 variants) for UI display
-const displayThemes = Object.fromEntries(
-  baseThemes.map((name) => [name, themeManifest[name]])
-) as typeof themeManifest;
 
 const config = inject(configSymbol);
 
@@ -36,7 +31,7 @@ onMounted(async () => {
   }) as EventListener);
 
   if (typeof themeName === "string" && themeName in themeManifest && config) {
-    window.__FORMKIT_AVAILABLE_THEMES__ = displayThemes;
+    window.__FORMKIT_AVAILABLE_THEMES__ = themeManifest;
 
     if (!customElements.get("formkit-theme-editor")) {
       const { createEditor } = await import("@formkit/theme-editor");
@@ -55,7 +50,7 @@ onMounted(async () => {
     document.dispatchEvent(
       new CustomEvent("formkit-available-themes", {
         detail: {
-          themes: displayThemes,
+          themes: themeManifest,
         },
       })
     );
