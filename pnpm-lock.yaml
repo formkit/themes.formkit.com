@@ -30,17 +30,17 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(yaml@2.8.2)
       '@formkit/theme-editor':
-        specifier: 0.6.1
-        version: 0.6.1(yaml@2.8.2)
+        specifier: 0.6.2
+        version: 0.6.2(yaml@2.8.2)
       '@formkit/theme-regenesis':
-        specifier: ^2.0.1
-        version: 2.0.1(yaml@2.8.2)
+        specifier: ^2.0.2
+        version: 2.0.2(yaml@2.8.2)
       '@formkit/theme-regenesis-tw3':
         specifier: npm:@formkit/theme-regenesis@^1.4.2
         version: '@formkit/theme-regenesis@1.4.2(yaml@2.8.2)'
       '@formkit/theme-starter':
-        specifier: ^2.0.1
-        version: 2.0.1(yaml@2.8.2)
+        specifier: ^2.0.2
+        version: 2.0.2(yaml@2.8.2)
       '@formkit/theme-starter-tw3':
         specifier: npm:@formkit/theme-starter@^1.4.2
         version: '@formkit/theme-starter@1.4.2(yaml@2.8.2)'
@@ -602,20 +602,20 @@ packages:
   '@formkit/theme-creator@2.0.0':
     resolution: {integrity: sha512-I6+xfEUBROpCG6aQwNH6iBgzPeWMAh9iikCGz1yRcsI39KG6b9idIhwysyo8ax2zKMrsuQ7coeeFiK6i5Q140Q==}
 
-  '@formkit/theme-editor@0.6.1':
-    resolution: {integrity: sha512-9KsP3FgeyShbpL3Tmkj9VexJwZBUbceSlpf8n773lPPi7ttPKWUD6ltcXLZGtQUUk2jlwQ/LRBG8srCNss3fuw==}
+  '@formkit/theme-editor@0.6.2':
+    resolution: {integrity: sha512-vtHYYyzhMOLf2hff77g0NcJqF27k7XC/NX/7Zy9eaoQsV/5Mv/EKyicrCMWhd889TafTQe1Ibqm3KGeqFr+ktw==}
 
   '@formkit/theme-regenesis@1.4.2':
     resolution: {integrity: sha512-HOo1SAb4f8PBtB7sGXTfiBBnZeyO5L3+TySBxrYoBZmj8R49/XozP4CM7OguPEfTPsGc5VI6NuTWUGFDefasCw==}
 
-  '@formkit/theme-regenesis@2.0.1':
-    resolution: {integrity: sha512-Mucd7djsGR2W+/OtyyRD+lDxGhYPT/ig1sDRHIOsXGenF/9qG9rL5n+qZ+h9RM5WnfchjgKLzlaGSeMA3D0ttg==}
+  '@formkit/theme-regenesis@2.0.2':
+    resolution: {integrity: sha512-VW6waVjdg5IihCUDyfJR/VFnSSC/INuSWiMgu0CLDRddDscRO8HIhwk73RtlHQ0quRDHpxnhS/DKF3Q6DL6hkg==}
 
   '@formkit/theme-starter@1.4.2':
     resolution: {integrity: sha512-CPxjUpYD6h1LzzpiFW+HrytSbJU/8tnxeC+0YHJq7zMnyxpWomcpbtNf256HghKlsCBu0a/recJnxZj8Au0agw==}
 
-  '@formkit/theme-starter@2.0.1':
-    resolution: {integrity: sha512-GnHu47Io1e+10U1BU0sxwRQnogoJxVIGcxiQaccXwFkV66Z4t3/9G+XfIVtq2r4YyqcqRFqICAVdJzuiMYc1Lg==}
+  '@formkit/theme-starter@2.0.2':
+    resolution: {integrity: sha512-srWt5NhyNJkaN5GmgkhY1N7YCdyr2D38DJjsCkiYojqdpi7fzqmF9RFF3mSmeSXMk97deLUOythkSIJSMfqFbQ==}
 
   '@formkit/themes@1.6.9':
     resolution: {integrity: sha512-/UD+MehQEdcCEadt73eIBGGAMEK8ODN0yq9r9299WvQxIELCOP2MbcxuWCV/g2Vd15Xhl8YFdn4KCzQi4X7QXA==}
@@ -4541,7 +4541,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@formkit/theme-editor@0.6.1(yaml@2.8.2)':
+  '@formkit/theme-editor@0.6.2(yaml@2.8.2)':
     dependencies:
       '@arrow-js/core': 1.0.0-alpha.9
       '@formkit/theme-creator': 0.9.1(yaml@2.8.2)
@@ -4557,7 +4557,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@formkit/theme-regenesis@2.0.1(yaml@2.8.2)':
+  '@formkit/theme-regenesis@2.0.2(yaml@2.8.2)':
     dependencies:
       '@formkit/theme-creator': 2.0.0(yaml@2.8.2)
     transitivePeerDependencies:
@@ -4573,7 +4573,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@formkit/theme-starter@2.0.1(yaml@2.8.2)':
+  '@formkit/theme-starter@2.0.2(yaml@2.8.2)':
     dependencies:
       '@formkit/theme-creator': 2.0.0(yaml@2.8.2)
     transitivePeerDependencies:
