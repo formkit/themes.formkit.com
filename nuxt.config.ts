@@ -52,15 +52,14 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          src: "https://cdn.tailwindcss.com",
+          src: "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4",
           id: "formkit-tailwind-script",
         },
+      ],
+      style: [
         {
-          innerHTML: `
-          tailwind.config = {
-            darkMode: 'class',
-          }
-          `,
+          type: "text/tailwindcss",
+          innerHTML: `@custom-variant dark (&:where(.dark, .dark *));`,
         },
       ],
     },
