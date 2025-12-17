@@ -73,6 +73,13 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
+    // Inline aliased TW3 packages - npm aliases don't resolve in serverless
+    externals: {
+      inline: [
+        '@formkit/theme-regenesis-tw3',
+        '@formkit/theme-starter-tw3',
+      ],
+    },
     storage: {
       kv: {
         driver: process.env.KV_DRIVER,
