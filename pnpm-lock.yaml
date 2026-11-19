@@ -33,8 +33,8 @@ importers:
         specifier: 0.6.2
         version: 0.6.2(yaml@2.8.2)
       '@formkit/theme-regenesis':
-        specifier: ^2.0.4
-        version: 2.0.4(yaml@2.8.2)
+        specifier: ^2.1.0
+        version: 2.1.0(yaml@2.8.2)
       '@formkit/theme-regenesis-tw3':
         specifier: npm:@formkit/theme-regenesis@^1.4.2
         version: '@formkit/theme-regenesis@1.4.2(yaml@2.8.2)'
@@ -608,8 +608,8 @@ packages:
   '@formkit/theme-regenesis@1.4.2':
     resolution: {integrity: sha512-HOo1SAb4f8PBtB7sGXTfiBBnZeyO5L3+TySBxrYoBZmj8R49/XozP4CM7OguPEfTPsGc5VI6NuTWUGFDefasCw==}
 
-  '@formkit/theme-regenesis@2.0.4':
-    resolution: {integrity: sha512-spZw+vfTA3pVUnrjAF3Ve5wKJ/S6FOcxLGUYaFXB2RDa/I8E8g1vWBGyg5qhWY0LjzDvqopF0Ojav6hI2rVQvg==}
+  '@formkit/theme-regenesis@2.1.0':
+    resolution: {integrity: sha512-O10DQezBtGqKnLANUtbPVN028P6XGoiJJOFf9qw1ZTF480FRT4r48sUJIqCB+xERSwGRfF82b2HqJ/4g0tyHrw==}
 
   '@formkit/theme-starter@1.4.2':
     resolution: {integrity: sha512-CPxjUpYD6h1LzzpiFW+HrytSbJU/8tnxeC+0YHJq7zMnyxpWomcpbtNf256HghKlsCBu0a/recJnxZj8Au0agw==}
@@ -4557,7 +4557,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@formkit/theme-regenesis@2.0.4(yaml@2.8.2)':
+  '@formkit/theme-regenesis@2.1.0(yaml@2.8.2)':
     dependencies:
       '@formkit/theme-creator': 2.0.0(yaml@2.8.2)
     transitivePeerDependencies:
